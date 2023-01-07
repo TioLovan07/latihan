@@ -1,5 +1,4 @@
 #include <iostream>
-#include <stdlib.h>
 #define max 5
 using namespace std;
 
@@ -80,45 +79,45 @@ int main(){
         cout<<"4. format"<<endl;
         cout<<"5. exit"<<endl;
         cout<<"======================="<<endl;
-        cout<<"choose"<<endl;
+        cout<<"choose : ";
         cin>>choose;
-        cout<<""<<endl;
         system("clear");
         if(choose==1){
             if(isFull()){
-                cout<<"antrian sudah penuh"<<endl;
+                cout<<"Antrian Sudah Penuh"<<endl;
             }
             else{
                 urut=p;
                 AntrianMasuk(urut);
                 cout<<"======================="<<endl;
-                cout<<"no antrian"<<endl;
+                cout<<"No Antrian"<<endl;
                 cout<<p<<endl;
-                cout<<"silahkan menunggu untuk dipanggil"<<endl;
+                cout<<"Silahkan Menunggu Untuk Dipanggil"<<endl;
                 cout<<"======================="<<endl;
                 p++;
             }
         }
         else if(choose==2){
             cout<<"====================="<<endl;
-            cout<<"no antri : "<<nomer[head]<<endl;
+            cout<<"No Antri : "<<nomer[head]<<endl;
             cout<<"====================="<<endl;
             AntrianKeluar();
-            cout<<"silahkan dipanggil"<<endl;
+            cout<<"Silahkan Dipanggil"<<endl;
         }
         else if(choose==3){
             view();
         }
         else if(choose==4){
             clear();
-            cout<<"antrian dikosongkan"<<endl;
+            cout<<"Antrian Dikosongkan"<<endl;
         }
         else if(choose==5){
-            cout<<"anda sudah keluar";
+            cout<<"Anda sudah keluar."<<endl;
+            cout<<"Terima Kasih.";
         }
         else{
-            cout<<"masukan anda salah"<<endl;
-            cout<<"silahkan pilih-pilihan yang tersedia"<<endl;
+            cout<<"Masukan Anda Salah"<<endl;
+            cout<<"Silahkan Pilih-Pilihan Yang Tersedia"<<endl;
         }
     }
     while(choose!=5);
